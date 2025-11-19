@@ -81,7 +81,7 @@ export default function App() {
     // Function to get ephemeral key from your backend
     const getEphemeralKey = useCallback(async (): Promise<string> => {
         try {
-            const apiUrl = process.env.SERVER_URL || 'http://localhost:3001';
+            const apiUrl = import.meta.env.SERVER_URL || 'http://localhost:3001';
             const response = await fetch(`${apiUrl}/api/session`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
