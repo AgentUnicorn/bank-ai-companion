@@ -182,6 +182,11 @@ const InteractivePanel: React.FC<InteractivePanelProps> = ({ appState, interacti
                                                         )}
                                                     </div>
                                                 )}
+
+                                                <span className="text-xs text-gray-400 self-end">
+                                                    <span className="mr-1">-1</span>
+                                                    {new Date(timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                                                </span>
                                             </div>
                                             {userAvatarUrl && <img src={userAvatarUrl} alt="User" className="w-8 h-8 rounded-full flex-shrink-0 object-cover" />}
                                         </div>
@@ -201,6 +206,10 @@ const InteractivePanel: React.FC<InteractivePanelProps> = ({ appState, interacti
                                                         <ReactMarkdown>{displayTitle}</ReactMarkdown>
                                                     </div>
                                                 </div>
+                                                <span className="text-xs text-gray-400 self-end">
+                                                    <span className="mr-1">-1</span>
+                                                    {new Date(timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                                                </span>
                                                 {/*{message.action && (*/}
                                                 {/*    <button*/}
                                                 {/*        id={`action-button-${message.action.key}`}*/}
