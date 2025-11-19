@@ -1,34 +1,31 @@
-# ----------------------------
-# 1. Build Stage
-# ----------------------------
+# ---------------------------------
+# 1. Build Stage (needs dev deps)
+# ---------------------------------
 FROM node:20-alpine AS builder
 
-ENV NODE_ENV=production
 WORKDIR /app
+ENV NODE_ENV=development
 
-# Copy package and install dependencies
+# Install ALL dependencies (including dev)
 COPY package*.json ./
 RUN npm install
 
-# Copy the entire project
+# Copy the source code
 COPY . .
 
-# Build Vite for production
+# Build the frontend
 RUN npm run build
 
 
-# ----------------------------
-# 2. Run Stage (Nginx)
-# ----------------------------
+# ---------------------------------
+# 2. Production Stage (Nginx)
+# ---------------------------------
 FROM nginx:alpine
 
 ENV NODE_ENV=production
 
-# Copy built frontend (dist) from builder
+# Copy built files from builder
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Expose the Nginx port
 EXPOSE 80
-
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
