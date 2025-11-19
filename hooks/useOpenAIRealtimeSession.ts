@@ -233,10 +233,10 @@ export const useOpenAIRealtimeSession = (
 
             sessionRef.current = new RealtimeSession(initialAgent, {
                 transport,
-                model: process.env.OPENAI_REALTIME_MODEL,
+                model: import.meta.env.VITE_OPENAI_REALTIME_MODEL,
                 config: {
                     inputAudioTranscription: {
-                        model: process.env.OPENAI_TRANSCRIPT_MODEL,
+                        model: import.meta.env.VITE_OPENAI_TRANSCRIPT_MODEL,
                     }
                 },
                 outputGuardrails: options.outputGuardrails ?? [],

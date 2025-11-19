@@ -130,7 +130,7 @@ export const supervisorAgentTools = [
 ];
 
 async function fetchResponsesMessage(body: any) {
-    const serverUrl = process.env.SERVER_URL;
+    const serverUrl = import.meta.env.VITE_SERVER_URL;
     const response = await fetch(serverUrl + '/api/openai/response', {
         method: 'POST',
         headers: {

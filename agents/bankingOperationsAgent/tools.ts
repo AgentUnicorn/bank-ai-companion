@@ -41,7 +41,7 @@ const invokeBankingTool = async (
 ): Promise<string> => {
     const payload = normalizeInput(input);
 
-    const response = await fetch(process.env.SERVER_URL + BANKING_MCP_PROXY_ENDPOINT, {
+    const response = await fetch(import.meta.env.VITE_SERVER_URL + BANKING_MCP_PROXY_ENDPOINT, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
