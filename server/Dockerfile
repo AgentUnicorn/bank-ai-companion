@@ -1,13 +1,15 @@
-FROM node:20-alpine AS base
+FROM node:20-alpine
 
 ENV NODE_ENV=production
+
 WORKDIR /app
 
-COPY server/package*.json ./
-RUN npm install --production
+COPY package*.json ./
 
-COPY server ./
+RUN npm install --omit=dev
+
+COPY server ./server
 
 EXPOSE 3001
 
-CMD ["node", "app.js"]
+CMD ["node", "server/app.js"]
