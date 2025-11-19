@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gianty Demo AI Companion</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0"
+  }
+}
+</script>
+
+<style>
+  html, body {
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* To prevent any scrollbars */
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    background-color: #424242;; /*  gray background for the letterbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #root {
+    /* Set aspect ratio to 9:16, fitting the screen height */
+    height: 100vh;
+    width: 56.25vh; /* 100 * 9 / 16 */
+    
+    /* Constrain to viewport dimensions */
+    max-width: 100vw;
+    max-height: 177.77vw; /* 100 * 16 / 9 */
+    
+    position: relative;
+    overflow: hidden;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

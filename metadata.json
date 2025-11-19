@@ -1,0 +1,7 @@
+{
+  "name": "BANK AI Companion",
+  "description": "AI Companion",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
