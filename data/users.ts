@@ -1,8 +1,8 @@
 export const users = [
     {
         id: 1,
-        email: 'lam.vb@com.vn',
-        name: 'Vương Bảo Lâm',
+        email: 'long.td@com.vn',
+        name: 'Trần Đình Long',
         phone: '0789722772',
         account_number: '1234567890',
         date_of_birth: new Date(1990, 3,30).toLocaleString(),
