@@ -202,7 +202,7 @@ export const useOpenAIRealtimeSession = (
         isSpeakingRef.current = false;
         isListeningRef.current = false;
 
-        historyHandlers.handleResetTranscriptHistory()
+        // historyHandlers.handleResetTranscriptHistory()
         updateStatus('DISCONNECTED');
         setTimeout(() => isStoppingRef.current = false, 100);
     }, [updateStatus]);
