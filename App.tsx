@@ -156,6 +156,7 @@ export default function App() {
     const handleToolCall = useCallback((name: string, args: any): ChatMessage | null => {
         console.log(`Tool call received: ${name}`, args);
 
+        args = JSON.parse(args) || {};
         if (name === 'init_transfer_money' && args.to_account_name && args.to_account_number) {
             setAiSuggestedTransfer({
                 recipientName: args.to_account_name,
@@ -175,8 +176,9 @@ export default function App() {
             if (isTransferModalOpenRef.current) {
                 setTransferStep('scanning');
             }
-            return { role: 'model', text: t('function_call_confirmTransfer') };
+            return null;
         } else if (name === 'finish_transfer_money') {
+            handleSuggestionHandled()
             if (isTransferModalOpenRef.current) {
                 setIsTransferModalOpen(false);
                 setTransferStep('input');
@@ -203,7 +205,26 @@ export default function App() {
             return null;
         }
 
-        return { role: 'model', text: t('function_call_default') };
+        return null;
+    }, [t]);
+
+    const handleToolCallEnd = useCallback((name: string, result: any): ChatMessage | null => {
+        console.log(`Tool call received: ${name}`, result);
+
+        result = JSON.parse(result) || {};
+        if (name === 'init_transfer_money') {
+            setAiSuggestedTransfer({
+                recipientName: result.to_account_name,
+                amount: result.amount,
+                accountNumber: result.to_account_number,
+                memo: result.description
+            });
+            setIsTransferModalOpen(true);
+            setTransferStep('input');
+            return null;
+        }
+
+        return null;
     }, [t]);
 
     const liveSessionCallbacks = useMemo(() => ({
@@ -306,10 +327,11 @@ export default function App() {
         },
         onInputAudioLevelUpdate: (level: number) => audioLevelUpdaterRef.current?.(level),
         onToolCall: (name: string, args: any) => {
-            console.log('Tool Name:', name)
-            console.log('Arguments:', args)
             handleToolCall(name, args)
         },
+        onToolCallEnd: (name: string, result: any) => {
+            handleToolCallEnd(name, result)
+        }
     }), [queueAudioChunk, stopAllAudio, t, resetInteractionState, handleToolCall]);
 
     const { start, stop, interrupt, mute, status, sendEvent } = useOpenAIRealtimeSession(initialAgent, companionId, liveSessionCallbacks);
