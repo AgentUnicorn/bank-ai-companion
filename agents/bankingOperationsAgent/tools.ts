@@ -107,7 +107,10 @@ export const getTransactionsTool = tool({
 
 export const initTransferMoney = tool({
     name: 'init_transfer_money',
-    description: "Bắt đầu chuyển tiền. Sử dụng điều này khi người dùng yêu cầu gửi tiền một cách rõ ràng. Ghi lại tên người nhận, số tiền và tùy chọn số tài khoản của người nhận và nội dung chuyển khoản.",
+    description: "" +
+        "Bắt đầu chuyển tiền. Sử dụng điều này khi người dùng yêu cầu gửi tiền một cách rõ ràng. " +
+        "Ghi lại tên người nhận, số tiền và tùy chọn số tài khoản của người nhận và nội dung chuyển khoản. " +
+        "Ngoài ra còn có thể sử dụng tool này để mở Form thông tin chuyển khoản nếu người dùng yêu cầu.",
     parameters: {
         type: "object",
         properties: {

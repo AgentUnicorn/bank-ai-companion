@@ -39,11 +39,6 @@ export const promotionsData = {
                 "Chương trình khuyến mãi không thể chuyển nhượng, không được cộng dồn, và không thể quy đổi thành tiền mặt hoặc các sản phẩm khác. Không thể áp dụng đồng thời với các chương trình giảm giá, khuyến mãi, sản phẩm đã giảm giá hoặc sản phẩm có giá cố định khác, trừ khi có quy định khác.",
                 "Để được hỗ trợ, vui lòng liên hệ bộ phận Chăm sóc Khách hàng Agoda thông qua Trang Trợ giúp."
             ],
-            info_links: {
-                program_site: "https://www.agoda.com",
-                additional_info: "https://www.specialoffers.jcb"
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/agoda-jcb-giam12",
             category: "Thẻ tín dụng"
         },
         {
@@ -67,11 +62,6 @@ export const promotionsData = {
                 "Giao dịch chi tiêu thoả điều kiện là những giao dịch tại điểm thanh toán ghi nhận trên hệ thống là chi tiêu tại MCC Code: 4900 - Utilities-electric, gas, water",
                 "Tháng xét giao dịch chi tiêu tính theo chu kì 30 ngày kể từ ngày phát hành thẻ (Tháng thứ 1: tháng phát hành thẻ + 30 ngày, Tháng thứ 2: tháng phát hành thẻ + 60 ngày, Tháng thứ 3: tháng phát hành thẻ + 90 ngày)"
             ],
-            info_links: {
-                program_site: "https://tpb.vn/wps/wcm/connect/d36557df-ab0a-4994-a534-abe468c55c91/%5BWeb%5D+The+_le_CTKM_danh_cho_KH_mo_the_qua_VDS.pdf?MOD=AJPERES&CVID=pvPrF1.&CVID=pvPrF1.",
-                additional_info: ""
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/tpbank-evo-vds",
             category: "Thẻ tín dụng"
         },
         {
@@ -105,11 +95,6 @@ export const promotionsData = {
                 "Giao dịch thanh toán được xác định là thành công theo việc cập nhật vào hệ thống thẻ của GIANTY Bank",
                 "Tại thời điểm nhận ưu đãi, Thẻ phải ở trạng thái đang hoạt động (Valid card)"
             ],
-            info_links: {
-                program_site: "https://tpb.vn/wps/wcm/connect/094ea462-f3a5-452d-a389-a7aa24953103/%5BWeb%5D+The+_le_CTKM_danh_cho_KH_mo_the_qua_FRT.pdf?MOD=AJPERES&CVID=pvPrzz8&CVID=pvPrzz8&CVID=pvPrzz8",
-                additional_info: ""
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/tpbank-evo-fptshop",
             category: "Thẻ tín dụng"
         },
         {
@@ -166,11 +151,6 @@ export const promotionsData = {
                 "Trong trường hợp có tranh chấp, quyết định của GIANTY Bank là quyết định cuối cùng",
                 "Thời gian giải quyết bất kỳ khiếu nại liên quan đến Chương trình là 45 ngày kể từ ngày kết thúc Chương trình"
             ],
-            info_links: {
-                program_site: "https://tpb.vn/wps/wcm/connect/658bed32-160b-455b-86bc-19de22dfa94c/%5BWeb%5D+The+_le_CTKM_danh_cho_KH_mo_the_qua_MWG.pdf?MOD=AJPERES&CVID=pu7DHH3&CVID=pu7DHH3&CVID=prTzj1c&CVID=prTzj1c&CVID=prTzj1c",
-                additional_info: ""
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/uu-dai-tpbank-evo",
             category: "Thẻ tín dụng"
         },
         {
@@ -210,11 +190,6 @@ export const promotionsData = {
                 "Khách hàng có quyền khiếu nại trong 30 ngày kể từ ngày kết thúc chương trình",
                 "Thắc mắc liên hệ Hotline: 1900585885; (024) 37683683"
             ],
-            info_links: {
-                program_site: "https://tpb.vn/wps/wcm/connect/35a02e34-92da-4586-b8a6-048fee1be2d0/FINAL_THE+LE+DAC+QUYEN+AM+THUC+THE+JCB+CASHBACK+-++SHOPEE+FOOD.pdf?MOD=AJPERES&CVID=pxQ00P.",
-                additional_info: ""
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/shopeefood-giam-20k",
             category: "Thẻ tín dụng"
         },
         {
@@ -252,11 +227,6 @@ export const promotionsData = {
                 "Khuyến mãi chỉ áp dụng cho giá dịch vụ, không bao gồm thuế, phí dịch vụ và chi phí khác",
                 "Chương trình khuyến mãi không thể chuyển nhượng, không được cộng dồn với các ưu đãi khác"
             ],
-            info_links: {
-                program_site: "https://www.traveloka.com",
-                additional_info: "https://www.specialoffers.jcb"
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/jcb-uu-dai-500k-traveloka",
             category: "Thẻ tín dụng"
         },
         {
@@ -287,11 +257,6 @@ export const promotionsData = {
                 "Áp dụng cho tất cả các sản phẩm UNIQLO bao gồm cả các sản phẩm đang giảm giá",
                 "Giá trị thanh toán của đơn hàng được tính là số tiền thực trả của đơn hàng sau khi áp dụng Mã Giảm Giá hoặc phí giao hàng (nếu có). Giá thanh toán đơn hàng (giá trị thanh toán cuối cùng) không bao gồm chi phí dịch vụ Lên Lai Quần, Túi Quà Tặng hay Dịch vụ gói quà"
             ],
-            info_links: {
-                program_site: "https://www.specialoffers.jcb/vi/campaign/detail/jcb_shopping_uniqlo/87443/",
-                additional_info: ""
-            },
-            source_url: "https://tpb.vn/khuyen-mai/the-tin-dung/uniqlo-hoan-tien-300k",
             category: "Thẻ tín dụng"
         },
         {
@@ -328,11 +293,6 @@ export const promotionsData = {
                 "Đối tượng khách hàng: Toàn bộ khách hàng",
                 "Dành cho người dưới 35 tuổi"
             ],
-            info_links: {
-                program_site: "",
-                additional_info: ""
-            },
-            source_url: "https://www.vpbank.com.vn/uu-dai/retail/loans-promotion-category/vay-uu-dai-mua-nha-cho-nguoi-tre-duoi-35-tuoi",
             category: "Vay"
         },
         {
@@ -361,11 +321,6 @@ export const promotionsData = {
                 "Thủ tục dễ dàng, nhanh gọn, không rào cản",
                 "Đối tượng khách hàng: Toàn bộ khách hàng"
             ],
-            info_links: {
-                program_site: "",
-                additional_info: ""
-            },
-            source_url: "https://www.vpbank.com.vn/uu-dai/retail/loans-promotion-category/vay-sxkd",
             category: "Vay"
         },
         {
@@ -408,11 +363,6 @@ export const promotionsData = {
                 "Thủ tục hồ sơ đơn giản, phê duyệt nhanh chóng",
                 "Không phát sinh chi phí để nhận phê duyệt khoản vay"
             ],
-            info_links: {
-                program_site: "",
-                additional_info: ""
-            },
-            source_url: "https://www.vpbank.com.vn/uu-dai/retail/loans-promotion-category/vay-mua-xe-byd",
             category: "Vay"
         },
         {
@@ -438,11 +388,6 @@ export const promotionsData = {
             conditions: [
                 "Đối tượng khách hàng: Cá nhân"
             ],
-            info_links: {
-                program_site: "https://www.vpbank.com.vn/-/media/vpbank-latest/1retail/promotion/for-cardholder/2025/cc-thang-11/steak-house-the-fan-2025/tnc-Steakhouse-the-Fan.pdf",
-                additional_info: ""
-            },
-            source_url: "https://www.vpbank.com.vn/uu-dai/retail/for-cardholder-promotion-category/cuisine/steakhouse-the-fan-2025",
             category: "F&B"
         },
         {
@@ -466,11 +411,6 @@ export const promotionsData = {
                 "Square One: 2 Lam Sơn Square, Bến Nghé Ward, District 1, Ho Chi Minh City.",
                 "Sol Kitchen & Bar: 112 Lý Tự Trọng Street, Bến Thành Ward, District 1, Ho Chi Minh City."
             ],
-            info_links: {
-                program_site: "",
-                additional_info: ""
-            },
-            source_url: "https://www.vpbank.com.vn/uu-dai/retail/for-cardholder-promotion-category/cuisine/michelin-2025",
             category: "F&B"
         }
     ]
