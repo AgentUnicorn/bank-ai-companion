@@ -1,8 +1,8 @@
 export const promotionsData = {
     promotions: [
         {
-            title: "Agoda | Ưu đãi 12% với thẻ TPBank JCB",
-            issuer: "TPBank",
+            title: "Agoda | Ưu đãi 12% với thẻ GIANTY Bank JCB",
+            issuer: "GIANTY Bank",
             partner: "Agoda",
             card_type: "thẻ tín dụng JCB phát hành tại Việt Nam",
             offer: {
@@ -47,10 +47,10 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "Viettel Digital Service | Hoàn 50% cho thẻ TPBank EVO mở mới khi thanh toán tiện ích điện, nước và gas",
-            issuer: "TPBank",
+            title: "Viettel Digital Service | Hoàn 50% cho thẻ GIANTY BANK EVO mở mới khi thanh toán tiện ích điện, nước và gas",
+            issuer: "GIANTY BANK",
             partner: "Viettel Digital Service",
-            card_type: "Thẻ tín dụng quốc tế TPBank EVO",
+            card_type: "Thẻ tín dụng quốc tế GIANTY BANK EVO",
             offer: {
                 discount: "50%",
                 cap: "tối đa 100.000 VNĐ /tháng, tổng mức hoàn tối đa 300.000 VNĐ/khách hàng",
@@ -62,7 +62,7 @@ export const promotionsData = {
             },
             applicable_area: "Toàn quốc",
             conditions: [
-                "Chương trình ưu đãi dành cho Khách hàng mở thẻ tín dụng quốc tế TPBank EVO do Tổng công ty dịch vụ số Viettel – Viettel Digital Service (VDS) giới thiệu",
+                "Chương trình ưu đãi dành cho Khách hàng mở thẻ tín dụng quốc tế GIANTY Bank EVO do Tổng công ty dịch vụ số Viettel – Viettel Digital Service (VDS) giới thiệu",
                 "Hoàn tiền 50% giá trị mỗi giao dịch trong 3 tháng đầu sau khi mở thẻ, khi chi tiêu để thanh toán tiện ích điện nước và gas",
                 "Giao dịch chi tiêu thoả điều kiện là những giao dịch tại điểm thanh toán ghi nhận trên hệ thống là chi tiêu tại MCC Code: 4900 - Utilities-electric, gas, water",
                 "Tháng xét giao dịch chi tiêu tính theo chu kì 30 ngày kể từ ngày phát hành thẻ (Tháng thứ 1: tháng phát hành thẻ + 30 ngày, Tháng thứ 2: tháng phát hành thẻ + 60 ngày, Tháng thứ 3: tháng phát hành thẻ + 90 ngày)"
@@ -75,21 +75,21 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "FPT Shop | Ưu đãi tới 20% dành cho thẻ TPBank EVO mở mới",
-            issuer: "TPBank",
+            title: "FPT Shop | Ưu đãi tới 20% dành cho thẻ GIANTY Bank EVO mở mới",
+            issuer: "GIANTY Bank",
             partner: "FPT Shop",
-            card_type: "TPBank EVO",
+            card_type: "GIANTY Bank EVO",
             offer: {
                 discount: "20%",
                 cap: "tối đa 500.000 đồng",
                 details: [
                     {
                         type: "Hoàn tiền giao dịch đầu tiên",
-                        description: "Hoàn 20% tối đa 500.000 đồng cho giao dịch trả thẳng đầu tiên bằng thẻ TPBank EVO tại FPTShop trong vòng 30 ngày kể từ ngày thẻ được phát hành"
+                        description: "Hoàn 20% tối đa 500.000 đồng cho giao dịch trả thẳng đầu tiên bằng thẻ GIANTY Bank EVO tại FPTShop trong vòng 30 ngày kể từ ngày thẻ được phát hành"
                     },
                     {
                         type: "Hoàn phí trả góp",
-                        description: "Hoàn phí chuyển đổi trả góp cho giao dịch trả góp lần đầu bằng thẻ TPBank EVO tại FPTShop trong vòng 30 ngày kể từ ngày thẻ được phát hành"
+                        description: "Hoàn phí chuyển đổi trả góp cho giao dịch trả góp lần đầu bằng thẻ GIANTY Bank EVO tại FPTShop trong vòng 30 ngày kể từ ngày thẻ được phát hành"
                     }
                 ]
             },
@@ -99,10 +99,10 @@ export const promotionsData = {
             },
             applicable_area: "Toàn quốc",
             conditions: [
-                "Chương trình ưu đãi dành cho Khách hàng mở thẻ tín dụng quốc tế TPBank EVO do hệ thống cửa hàng FPT Shop giới thiệu",
+                "Chương trình ưu đãi dành cho Khách hàng mở thẻ tín dụng quốc tế GIANTY Bank EVO do hệ thống cửa hàng FPT Shop giới thiệu",
                 "Khách hàng hưởng 1 trong 2 ưu đãi sau",
-                "Giao dịch thanh toán phải được thực hiện bằng Thẻ tín dụng TPBank EVO thông qua ứng dụng EVO trong thời gian diễn ra chương trình. Trường hợp khách hàng sử dụng các hình thức thanh toán khác, TPBank sẽ không chi trả tiền hoàn",
-                "Giao dịch thanh toán được xác định là thành công theo việc cập nhật vào hệ thống thẻ của TPBank",
+                "Giao dịch thanh toán phải được thực hiện bằng Thẻ tín dụng GIANTY Bank EVO thông qua ứng dụng EVO trong thời gian diễn ra chương trình. Trường hợp khách hàng sử dụng các hình thức thanh toán khác, GIANTY Bank sẽ không chi trả tiền hoàn",
+                "Giao dịch thanh toán được xác định là thành công theo việc cập nhật vào hệ thống thẻ của GIANTY Bank",
                 "Tại thời điểm nhận ưu đãi, Thẻ phải ở trạng thái đang hoạt động (Valid card)"
             ],
             info_links: {
@@ -113,25 +113,25 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "Hệ thống cửa hàng Thế Giới Di Động | Combo ưu đãi hấp dẫn với thẻ tín dụng TPBank EVO",
-            issuer: "TPBank",
+            title: "Hệ thống cửa hàng Thế Giới Di Động | Combo ưu đãi hấp dẫn với thẻ tín dụng GIANTY Bank EVO",
+            issuer: "GIANTY Bank",
             partner: "Thế Giới Di Động (Thế Giới Di Động, Điện Máy Xanh, Topzone)",
-            card_type: "Thẻ tín dụng TPBank EVO",
+            card_type: "Thẻ tín dụng GIANTY Bank EVO",
             offer: {
                 discount: "20%",
                 cap: "tối đa 500.000 VNĐ",
                 details: [
                     {
                         period: "01/01/2025 - 30/04/2025",
-                        description: "Hoàn 20%, tối đa 500,000 VNĐ cho giao dịch thanh toán thành công đầu tiên bằng thẻ TPBank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
+                        description: "Hoàn 20%, tối đa 500,000 VNĐ cho giao dịch thanh toán thành công đầu tiên bằng thẻ GIANTY Bank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
                     },
                     {
                         period: "01/01/2025 - 30/04/2025",
-                        description: "Hoàn phí chuyển đổi trả góp cho Khách hàng đăng ký trả góp lần đầu cho giao dịch thành công bằng thẻ TPBank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
+                        description: "Hoàn phí chuyển đổi trả góp cho Khách hàng đăng ký trả góp lần đầu cho giao dịch thành công bằng thẻ GIANTY Bank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
                     },
                     {
                         period: "01/05/2025 - 31/12/2025",
-                        description: "Hoàn 200,000 VND cho đơn hàng đầu tiên trị giá từ 1,000,000 VND thanh toán bằng thẻ TPBank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
+                        description: "Hoàn 200,000 VND cho đơn hàng đầu tiên trị giá từ 1,000,000 VND thanh toán bằng thẻ GIANTY Bank EVO tại Thế Giới Di Động trong vòng 30 ngày kể từ ngày thẻ được phát hành"
                     },
                     {
                         condition: "Tổng giá trị giao dịch kỳ sao kê trước ≥ 10 triệu đồng",
@@ -149,21 +149,21 @@ export const promotionsData = {
             },
             applicable_area: "Toàn quốc",
             conditions: [
-                "Giao dịch thanh toán phải được thực hiện bằng Thẻ tín dụng TPBank EVO trong thời gian diễn ra chương trình",
-                "Giao dịch thanh toán được xác định là thành công theo việc cập nhật vào hệ thống thẻ của TPBank",
-                "TPBank thực hiện hoàn tiền vào thẻ tín dụng TPBank EVO cho Khách hàng trong kỳ sao kê kế tiếp kể từ khi thẻ tín dụng TPBank EVO phát sinh giao dịch đầu tiên",
+                "Giao dịch thanh toán phải được thực hiện bằng Thẻ tín dụng GIANTY Bank EVO trong thời gian diễn ra chương trình",
+                "Giao dịch thanh toán được xác định là thành công theo việc cập nhật vào hệ thống thẻ của GIANTY Bank",
+                "GIANTY Bank thực hiện hoàn tiền vào thẻ tín dụng GIANTY Bank EVO cho Khách hàng trong kỳ sao kê kế tiếp kể từ khi thẻ tín dụng GIANTY Bank EVO phát sinh giao dịch đầu tiên",
                 "Khách hàng hưởng khuyến mại phải nộp các loại thuế, phí (nếu có) theo quy định của Pháp luật hiện hành",
                 "Khách hàng sử dụng thẻ hưởng ưu đãi theo Chương trình này sẽ không được hưởng ưu đãi theo Chương trình hoàn tiền chi tiêu online",
-                "Trường hợp tổng số tiền hoàn của KH trong kỳ lẻ dưới 1 VNĐ, TPBank thực hiện làm tròn xuống 0 VNĐ",
-                "TPBank chỉ thực hiện hoàn tiền nếu số tiền hoàn của KH đạt từ 10.000 VNĐ",
+                "Trường hợp tổng số tiền hoàn của KH trong kỳ lẻ dưới 1 VNĐ, GIANTY Bank thực hiện làm tròn xuống 0 VNĐ",
+                "GIANTY Bank chỉ thực hiện hoàn tiền nếu số tiền hoàn của KH đạt từ 10.000 VNĐ",
                 "Ưu đãi không có giá trị quy đổi thành tiền mặt hoặc hoàn trả tiền chênh lệch (nếu có)",
-                "Trong trường hợp số tiền hoàn cho KH được hệ thống của TPBank tính toán chưa chính xác, TPBank được quyền tính toán lại số tiền hoàn cho KH, đồng thời TPBank được quyền tự động trích Nợ từ Tài khoản Thẻ và/hoặc Tài khoản thanh toán của Chủ thẻ tại TPBank để thu hồi lại số tiền đã hoàn cho Chủ thẻ (nếu số tiền hoàn được tính toán lại nhỏ hơn số tiền đã hoàn trước đó)",
-                "TPBank có toàn quyền từ chối trao giải thưởng cho bất kỳ Khách hàng nào mà TPBank cho là cung cấp thông tin không hợp lệ, không rõ ràng, không đầy đủ hoặc vi phạm bất kỳ Điều khoản và Điều kiện nào của Chương trình",
-                "Quyết định của TPBank liên quan đến Chương trình này và kết quả Khách hàng được nhận ưu đãi là cuối cùng và chính thức",
-                "Các Điều khoản, Điều kiện về Sử dụng nền tảng đăng ký mở thẻ TPBank EVO; Đơn đề nghị phát hành thẻ tín dụng TPBank kiêm Hợp đồng sử dụng thẻ cũng được áp dụng cùng với các Điều khoản và Điều kiện của Chương trình này",
-                "TPBank có quyền thay đổi nội dung khuyến mại và điều chỉnh các điều kiện, điều khoản trong thời gian diễn ra Chương trình mà không cần phải thông báo trước. Thể lệ mới nhất sẽ chỉ được công bố trên website của TPBank: https://tpb.vn/ và website của EVO: https://goevo.vn/",
-                "TPBank được miễn trách nhiệm đối với các trường hợp bất khả kháng xảy ra trong thời gian diễn ra Chương trình",
-                "Trong trường hợp có tranh chấp, quyết định của TPBank là quyết định cuối cùng",
+                "Trong trường hợp số tiền hoàn cho KH được hệ thống của GIANTY Bank tính toán chưa chính xác, GIANTY Bank được quyền tính toán lại số tiền hoàn cho KH, đồng thời GIANTY Bank được quyền tự động trích Nợ từ Tài khoản Thẻ và/hoặc Tài khoản thanh toán của Chủ thẻ tại GIANTY Bank để thu hồi lại số tiền đã hoàn cho Chủ thẻ (nếu số tiền hoàn được tính toán lại nhỏ hơn số tiền đã hoàn trước đó)",
+                "GIANTY Bank có toàn quyền từ chối trao giải thưởng cho bất kỳ Khách hàng nào mà GIANTY Bank cho là cung cấp thông tin không hợp lệ, không rõ ràng, không đầy đủ hoặc vi phạm bất kỳ Điều khoản và Điều kiện nào của Chương trình",
+                "Quyết định của GIANTY Bank liên quan đến Chương trình này và kết quả Khách hàng được nhận ưu đãi là cuối cùng và chính thức",
+                "Các Điều khoản, Điều kiện về Sử dụng nền tảng đăng ký mở thẻ GIANTY Bank EVO; Đơn đề nghị phát hành thẻ tín dụng GIANTY Bank kiêm Hợp đồng sử dụng thẻ cũng được áp dụng cùng với các Điều khoản và Điều kiện của Chương trình này",
+                "GIANTY Bank có quyền thay đổi nội dung khuyến mại và điều chỉnh các điều kiện, điều khoản trong thời gian diễn ra Chương trình mà không cần phải thông báo trước. Thể lệ mới nhất sẽ chỉ được công bố trên website của GIANTY Bank: https://tpb.vn/ và website của EVO: https://goevo.vn/",
+                "GIANTY Bank được miễn trách nhiệm đối với các trường hợp bất khả kháng xảy ra trong thời gian diễn ra Chương trình",
+                "Trong trường hợp có tranh chấp, quyết định của GIANTY Bank là quyết định cuối cùng",
                 "Thời gian giải quyết bất kỳ khiếu nại liên quan đến Chương trình là 45 ngày kể từ ngày kết thúc Chương trình"
             ],
             info_links: {
@@ -174,10 +174,10 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "Shopee Food | Giảm tới 50.000VNĐ với thẻ TPBank JCB Cashback",
-            issuer: "TPBank",
+            title: "Shopee Food | Giảm tới 50.000VNĐ với thẻ GIANTY Bank JCB Cashback",
+            issuer: "GIANTY Bank",
             partner: "ShopeeFood",
-            card_type: "Thẻ tín dụng TPBank JCB Cashback",
+            card_type: "Thẻ tín dụng GIANTY Bank JCB Cashback",
             offer: {
                 discount: "tới 50.000 VNĐ",
                 cap: "20k: 3 lần/tháng/user; 50k: 1 lần/tháng/user",
@@ -201,10 +201,10 @@ export const promotionsData = {
                 "Thẻ của khách hàng phải ở trạng thái hoạt động (Valid Card) tại thời điểm giao dịch",
                 "Không có trạng thái: Hủy thẻ, Nợ quá hạn, Phát hành lại/Thay thế thẻ, Khóa chờ hủy, Nợ quá hạn, Thẻ cần xác định lại thông tin, Thẻ hết hạn, Thẻ bị khóa do nghi ngờ rủi ro, lộ thông tin",
                 "Chỉ dành cho khách hàng cá nhân, không áp dụng với khách hàng Doanh nghiệp",
-                "TPBank bảo lưu quyền từ chối áp dụng ưu đãi cho thanh toán có dấu hiệu sử dụng cho mục đích kinh doanh",
+                "GIANTY Bank bảo lưu quyền từ chối áp dụng ưu đãi cho thanh toán có dấu hiệu sử dụng cho mục đích kinh doanh",
                 "Ưu đãi không được chuyển nhượng, không thay thế bằng sản phẩm khác, không quy đổi ra tiền mặt",
-                "TPBank có quyền sử dụng hình ảnh, thông tin khách hàng để quảng bá sản phẩm/dịch vụ",
-                "Tranh chấp được giải quyết theo thỏa thuận giữa TPBank và khách hàng, phù hợp quy định pháp luật",
+                "GIANTY Bank có quyền sử dụng hình ảnh, thông tin khách hàng để quảng bá sản phẩm/dịch vụ",
+                "Tranh chấp được giải quyết theo thỏa thuận giữa GIANTY Bank và khách hàng, phù hợp quy định pháp luật",
                 "Khách hàng nhận mã ưu đãi dựa trên chi tiêu thực tế từ ngày hiệu lực chương trình",
                 "Thay đổi chương trình sẽ được thông báo trên website https://tpb.vn/",
                 "Khách hàng có quyền khiếu nại trong 30 ngày kể từ ngày kết thúc chương trình",
@@ -219,7 +219,7 @@ export const promotionsData = {
         },
         {
             title: "Traveloka | Ưu đãi tới 500K khi du lịch Nhật Bản với thẻ JCB",
-            issuer: "TPBank",
+            issuer: "GIANTY Bank",
             partner: "Traveloka",
             card_type: "JCB",
             offer: {
@@ -260,10 +260,10 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "Uniqlo | Hoàn tiền tới 300K khi chi tiêu với thẻ TPBank JCB",
-            issuer: "TPBank",
+            title: "Uniqlo | Hoàn tiền tới 300K khi chi tiêu với thẻ GIANTY Bank JCB",
+            issuer: "GIANTY Bank",
             partner: "Uniqlo",
-            card_type: "TPBank JCB",
+            card_type: "GIANTY Bank JCB",
             offer: {
                 discount: "300.000 VND",
                 cap: "300.000 VND",
@@ -280,10 +280,10 @@ export const promotionsData = {
             },
             applicable_area: "Toàn quốc",
             conditions: [
-                "Áp dụng cho chủ thẻ TPBank JCB thanh toán trực tiếp bằng thẻ TPBank JCB tại quầy thu ngân hoặc cửa hàng trực tuyến",
+                "Áp dụng cho chủ thẻ GIANTY Bank JCB thanh toán trực tiếp bằng thẻ GIANTY Bank JCB tại quầy thu ngân hoặc cửa hàng trực tuyến",
                 "Không chấp nhận tách hóa đơn dưới mọi hình thức",
-                "Không áp dụng đồng thời với các chương trình khuyến mãi khác của thẻ TPBank JCB",
-                "Chỉ áp dụng thanh toán bằng thẻ TPBank JCB, tất cả các phương thức thanh toán khác không được chấp nhận",
+                "Không áp dụng đồng thời với các chương trình khuyến mãi khác của thẻ GIANTY Bank JCB",
+                "Chỉ áp dụng thanh toán bằng thẻ GIANTY Bank JCB, tất cả các phương thức thanh toán khác không được chấp nhận",
                 "Áp dụng cho tất cả các sản phẩm UNIQLO bao gồm cả các sản phẩm đang giảm giá",
                 "Giá trị thanh toán của đơn hàng được tính là số tiền thực trả của đơn hàng sau khi áp dụng Mã Giảm Giá hoặc phí giao hàng (nếu có). Giá thanh toán đơn hàng (giá trị thanh toán cuối cùng) không bao gồm chi phí dịch vụ Lên Lai Quần, Túi Quà Tặng hay Dịch vụ gói quà"
             ],
@@ -295,8 +295,8 @@ export const promotionsData = {
             category: "Thẻ tín dụng"
         },
         {
-            title: "Có nhà mơ ước trước 35 tuổi với ưu đãi siêu hời từ TPBank",
-            issuer: "TPBank",
+            title: "Có nhà mơ ước trước 35 tuổi với ưu đãi siêu hời từ GIANTY Bank",
+            issuer: "GIANTY Bank",
             partner: "",
             offer: {
                 discount: "lãi suất từ 5.2%/năm",
@@ -337,7 +337,7 @@ export const promotionsData = {
         },
         {
             title: "Ưu đãi lãi suất dành cho KH vay Sản xuất kinh doanh chỉ 5.39%/năm",
-            issuer: "TPBank",
+            issuer: "GIANTY Bank",
             partner: "",
             offer: {
                 discount: "5.39%/năm",
@@ -354,7 +354,7 @@ export const promotionsData = {
             },
             applicable_area: "Toàn quốc",
             conditions: [
-                "Dành cho Khách hàng mới phát sinh khoản vay Sản xuất kinh doanh tại TPBank",
+                "Dành cho Khách hàng mới phát sinh khoản vay Sản xuất kinh doanh tại GIANTY Bank",
                 "Chủ hộ kinh doanh có nhu cầu bổ sung vốn để mở rộng, phát triển hoạt động kinh doanh",
                 "Chủ động chọn gói vay, kỳ hạn vay theo kế hoạch kinh doanh & điều kiện tài chính",
                 "Hồ sơ vay linh hoạt, phê duyệt tự động & báo kết quả tức thì",
@@ -370,7 +370,7 @@ export const promotionsData = {
         },
         {
             title: "Mua xe điện BYD với LÃI SUẤT ĐẶC QUYỀN chỉ 7,9%/năm",
-            issuer: "TPBank",
+            issuer: "GIANTY Bank",
             partner: "BYD",
             offer: {
                 discount: "7.9%/năm",
@@ -416,10 +416,10 @@ export const promotionsData = {
             category: "Vay"
         },
         {
-            title: "Trải nghiệm ẩm thực với ưu đãi đến 15% tại STEAKHOUSE THE FAN cùng TPBank",
-            issuer: "TPBank",
+            title: "Trải nghiệm ẩm thực với ưu đãi đến 15% tại STEAKHOUSE THE FAN cùng GIANTY Bank",
+            issuer: "GIANTY Bank",
             partner: "STEAKHOUSE THE FAN",
-            card_type: "Thẻ TPBank",
+            card_type: "Thẻ GIANTY Bank",
             offer: {
                 discount: "15%",
                 cap: "",
@@ -446,10 +446,10 @@ export const promotionsData = {
             category: "F&B"
         },
         {
-            title: "Đẳng Cấp Ẩm thực Michelin & Fine Dining với TPBank",
-            issuer: "TPBank",
+            title: "Đẳng Cấp Ẩm thực Michelin & Fine Dining với GIANTY Bank",
+            issuer: "GIANTY Bank",
             partner: "Nhà hàng Michelin",
-            card_type: "Thẻ TPBank",
+            card_type: "Thẻ GIANTY Bank",
             offer: {
                 discount: "",
                 cap: "",
