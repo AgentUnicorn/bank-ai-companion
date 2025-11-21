@@ -11,23 +11,25 @@ import Header from './components/Header';
 import DebugOverlay from './components/DebugOverlay';
 import ThinkingAnimation from './components/ThinkingAnimation';
 import TransactionsModal from './components/TransactionsModal';
+import Login from './components/Login';
 
 import { useAppAssets } from './hooks/useAppAssets';
 import { useAudioPlayback } from './hooks/useAudioPlayback';
 import { useLiveSession } from './hooks/useLiveSession';
 import { useTranslation } from './i18n/LanguageContext';
 
-import {AppState, ChatMessage, CompanionId, InteractionMode, SessionStatus} from './types';
+import { AppState, ChatMessage, CompanionId, InteractionMode, SessionStatus } from './types';
 import { featureMap, features as allFeatures } from './data/features';
 import { transactionsData } from './data/transactions';
-import {useOpenAIRealtimeSession} from "./hooks/useOpenAIRealtimeSession";
-import {createModerationGuardrail} from "./agents/guardrails.ts";
-import {v4 as uuidv4} from "uuid";
-import {useHandleSessionHistory} from "./hooks/useHandleSessionHistory.ts";
-import {useTranscript} from "./contexts/TranscriptContext.tsx";
-import {initialAgent} from "./agents";
+import { useOpenAIRealtimeSession } from "./hooks/useOpenAIRealtimeSession";
+import { createModerationGuardrail } from "./agents/guardrails.ts";
+import { v4 as uuidv4 } from "uuid";
+import { useHandleSessionHistory } from "./hooks/useHandleSessionHistory.ts";
+import { useTranscript } from "./contexts/TranscriptContext.tsx";
+import { initialAgent } from "./agents";
 
 export default function App() {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [appState, setAppState] = useState<AppState>(AppState.IDLE);
     const [sessionStatus, setSessionStatus] = useState<SessionStatus>('DISCONNECTED');
     const handoffTriggerRef = useRef(false)
@@ -46,7 +48,7 @@ export default function App() {
 
     const companionId: CompanionId = 'G';
 
-    const [selectedFeature, setSelectedFeature] = useState<{name: string, description: string} | null>(null);
+    const [selectedFeature, setSelectedFeature] = useState<{ name: string, description: string } | null>(null);
     const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
 
     const [interactionMode, setInteractionMode] = useState<InteractionMode>(null);
@@ -64,7 +66,7 @@ export default function App() {
     const characterRef = useRef<HTMLImageElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const audioElementRef = useRef<HTMLAudioElement>(null);
-    const audioLevelUpdaterRef = useRef<(level: number) => void>(() => {});
+    const audioLevelUpdaterRef = useRef<(level: number) => void>(() => { });
     const liveSessionActionsRef = useRef<{ start: (options: any) => Promise<void>; stop: () => Promise<void>; interrupt: () => void; mute: (m: boolean) => void; } | null>(null);
     const onPlaybackEndedRef = useRef<(() => void) | undefined>(undefined);
 
@@ -359,6 +361,18 @@ export default function App() {
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
 
+    useEffect(() => {
+        const auth = localStorage.getItem('isAuthenticated');
+        if (auth === 'true') {
+            setIsAuthenticated(true);
+        }
+    }, []);
+
+    const handleLogin = () => {
+        setIsAuthenticated(true);
+        localStorage.setItem('isAuthenticated', 'true');
+    };
+
     // Create audio element for OpenAI WebRTC
     // useEffect(() => {
     //     if (!audioElementRef.current) {
@@ -517,11 +531,11 @@ export default function App() {
     // --- DERIVED STATE FOR LAYOUT CONTROL ---
     const isInteractionActive = useMemo(() => interactionMode !== null, [interactionMode]);
     const isConnecting = useMemo(() =>
-            appState === AppState.THINKING && interactionMode === 'voice',
+        appState === AppState.THINKING && interactionMode === 'voice',
         [appState, interactionMode]
     );
     const isChatLayout = useMemo(() =>
-            isInteractionActive && !isConnecting,
+        isInteractionActive && !isConnecting,
         [isInteractionActive, isConnecting]
     );
     const showChat = useMemo(() => liveConversation.length > 0, [liveConversation]);
@@ -531,6 +545,10 @@ export default function App() {
     }, []);
 
     // --- RENDER ---
+    if (!isAuthenticated) {
+        return <Login onLogin={handleLogin} />;
+    }
+
     return (
         <div id="app-container" className="relative w-full h-full max-h-screen aspect-[9/16] overflow-hidden bg-gray-100 shadow-2xl shadow-black/20 flex flex-col">
             <style>{`
