@@ -119,9 +119,12 @@ export const initTransferMoney = tool({
         required: ["to_account_name", "to_account_number", "amount"],
         additionalProperties: false
     },
-    execute: () => {
+    execute: ({to_account_name, to_account_number, amount, description}) => {
         return {
-            success: true
+            to_account_name,
+            to_account_number: to_account_number.toString(),
+            amount,
+            description
         }
     }
 })
@@ -131,8 +134,13 @@ export const continueTransferMoney = tool({
     description: "Confirms the initial transfer details and proceeds to the final confirmation screen. Use this after the user has reviewed the initial transfer details on the screen and said 'ok' or 'continue'.",
     parameters: {
         type: "object",
-        properties: {},
-        required: [],
+        properties: {
+            to_account_name: {type: "string", description: "Họ và tên người nhận"},
+            to_account_number: {type: "number", description: "Số tài khoản"},
+            amount: {type: "number", description: "Số tiền"},
+            description: {type: "string", description: "Nội dung chuyển khoản"}
+        },
+        required: ["to_account_name", "to_account_number", "amount"],
         additionalProperties: false
     },
     execute: () => {

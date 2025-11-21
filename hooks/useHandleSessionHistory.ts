@@ -90,6 +90,11 @@ export function useHandleSessionHistory() {
             `function call result: ${lastFunctionCall?.name}`,
             maybeParseJson(result)
         );
+
+        return {
+            name: lastFunctionCall?.name,
+            tool_call_result: result,
+        }
     }
 
     function handleHistoryAdded(item: any) {

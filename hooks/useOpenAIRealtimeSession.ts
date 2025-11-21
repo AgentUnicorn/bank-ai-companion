@@ -29,6 +29,7 @@ interface LiveSessionCallbacks {
     onError: (message: string) => void;
     onInputAudioLevelUpdate: (level: number) => void;
     onToolCall: (name: string, args: any) => void;
+    onToolCallEnd: (name: string, result: any) => void;
 }
 
 interface ConnectOptions {
@@ -258,15 +259,23 @@ export const useOpenAIRealtimeSession = (
             sessionRef.current.on('guardrail_tripped', historyHandlers.handleGuardrailTripped)
 
             // Handle tool calls
-            sessionRef.current.on('agent_tool_start', historyHandlers.handleAgentToolStart)
-            // sessionRef.current.on('agent_tool_start', (details: any, agent: any, functionCall: any) => {
-            //     const {name, args} = historyHandlers.handleAgentToolStart(details, agent, functionCall)
-            //
-            //     if (name && args && args.length) {
-            //         callbacks.onToolCall(name, args)
-            //     }
-            // })
-            sessionRef.current.on('agent_tool_end', historyHandlers.handleAgentToolEnd)
+            // sessionRef.current.on('agent_tool_start', historyHandlers.handleAgentToolStart)
+            sessionRef.current.on('agent_tool_start', (details: any, agent: any, functionCall: any) => {
+                const {name, args} = historyHandlers.handleAgentToolStart(details, agent, functionCall)
+
+                if (name && args && args.length) {
+                    callbacks.onToolCall(name, args)
+                }
+            })
+
+            // sessionRef.current.on('agent_tool_end', historyHandlers.handleAgentToolEnd)
+            sessionRef.current.on('agent_tool_end', (details: any, agent: any, functionCall: any, result: any) => {
+                const {name, tool_call_result} = historyHandlers.handleAgentToolEnd(details, agent, functionCall, result)
+
+                if (name && tool_call_result && tool_call_result.length) {
+                    callbacks.onToolCallEnd(name, tool_call_result)
+                }
+            })
 
             await sessionRef.current.connect({ apiKey: ek });
             updateStatus('CONNECTED');

@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react';
 import { useTranslation } from '../i18n/LanguageContext';
+import {users} from "../data/users.ts";
 
 // --- ICONS ---
 const CloseIcon: React.FC = () => (
@@ -69,7 +70,8 @@ const TransferModal: React.FC<TransferModalProps> = ({ isOpen, onClose, suggeste
     
     const amountInputRef = useRef<HTMLInputElement>(null);
 
-    const isInputValid = recipient.trim() !== '' && accountNumber.trim().length > 5 && parseFloat(amount) > 0;
+    const isInputValid = recipient.trim() !== '' && accountNumber.toString().trim().length > 5 && parseFloat(amount) > 0;
+    const user = users[0]
 
     const resetForm = useCallback(() => {
         onStepChange('input');
@@ -91,9 +93,9 @@ const TransferModal: React.FC<TransferModalProps> = ({ isOpen, onClose, suggeste
             onStepChange('input');
             setRecipient(suggestedTransfer.recipientName);
             setAmount(String(suggestedTransfer.amount));
-            setAccountNumber(suggestedTransfer.accountNumber || '');
+            setAccountNumber(suggestedTransfer.accountNumber.toString() || '');
             setMemo(suggestedTransfer.memo || '');
-            onSuggestionHandled();
+            // onSuggestionHandled();
         }
     }, [suggestedTransfer, onSuggestionHandled, onStepChange]);
     
@@ -146,8 +148,8 @@ const TransferModal: React.FC<TransferModalProps> = ({ isOpen, onClose, suggeste
                     <label className="text-sm font-semibold text-gray-500 px-2">{t('transfer_from')}</label>
                     <button className="w-full flex items-center justify-between text-left p-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
                         <div>
-                            <p className="font-bold text-gray-800">{t('transfer_payment_account')}</p>
-                            <p className="text-sm text-gray-600">...8765 - <span className="text-gray-500">{t('transfer_available_balance')}:</span> $2,568.50</p>
+                            <p className="font-bold text-gray-800">{user.name}</p>
+                            <p className="text-sm text-gray-600">...{user.account_number.slice(-4)}</p>
                         </div>
                         <ChevronRightIcon className="w-5 h-5 text-gray-400" />
                     </button>
@@ -197,8 +199,8 @@ const TransferModal: React.FC<TransferModalProps> = ({ isOpen, onClose, suggeste
                 <div id="transfer-summary" className="space-y-4">
                     <div className="p-3 bg-gray-100 rounded-lg border border-gray-200">
                         <p className="text-sm text-gray-500">{t('transfer_from')}</p>
-                        <p className="font-semibold">{t('transfer_payment_account')}</p>
-                        <p className="font-mono text-sm text-gray-600">...8765</p>
+                        <p className="font-semibold">{user.name}</p>
+                        <p className="font-mono text-sm text-gray-600">...{user.account_number.slice(-4)}</p>
                     </div>
                      <div className="p-3 bg-gray-100 rounded-lg border border-gray-200">
                         <p className="text-sm text-gray-500">{t('transfer_to')}</p>
